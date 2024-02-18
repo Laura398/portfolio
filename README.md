@@ -1,30 +1,25 @@
-# React + TypeScript + Vite
+<div align="center"><img src="./logo.svg"></div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<br />
 
-Currently, two official plugins are available:
+<h1 align="center">Portfolio</h1>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<br />
 
-## Expanding the ESLint configuration
+## Description
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Welcome to my portfolio! I'm Laura Mathieu, a full-stack web developer passionate about creating engaging and functional web experiences.
 
-- Configure the top-level `parserOptions` property like this:
+This website showcases a selection of my projects, demonstrating my skills in both frontend and backend technologies.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Each project is accompanied by a brief description, highlighting its purpose, my role, and the technologies used.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Feel free to explore, and don't hesitate to reach out if you have any questions or collaboration opportunities!
+
+## Key Features
+
+- Demonstrates expertise.
+- Highlights a diverse range of projects.
+- Clear contact information for inquiries or collaboration opportunities.
+
+Thank you for visiting!
