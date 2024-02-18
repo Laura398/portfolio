@@ -9,7 +9,7 @@
     align-items: center;
     padding: 0 2em;
     z-index: 100;
-    background-color: #1a1e23;
+    background-color: var(--tertiary);
     backdrop-filter: blur(10px);
     border-bottom:  var(--secondary) 5px solid;
     box-shadow: 0 5px 10px var(--secondary);

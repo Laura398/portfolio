@@ -1,15 +1,74 @@
-#about-container {
+#about {
     position: relative;
     width: 100vw;
-    height: 180vh;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    color: white;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1.5;
+    font-weight: 500;
+    font-family: inherit;
+    text-shadow: 3px 10px 5px rgba(0, 0, 0, 0.5);
+    background: #3399ff;
+    border-top: var(--secondary) 5px solid;
+    box-shadow: inset 0 20px 20px var(--secondary);
+    overflow: hidden;
+    
+    .about-element {
+        margin: 0;
+        padding: 10px;
+        border-radius: 8px;
+        font-size: 1em;
+        font-weight: 500;
+        font-family: inherit;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        width: 40%;
+        min-height: 80%;
+        opacity: 0.8;
+        color: white;
+        font-size: 20px;
 
-    #about {
-        position: relative;
-        width: 100vw;
-        height: 10vh;
+        @media screen and (orientation: "portrait") {
+            width: 70%;
+
+            h1 {
+                font-size: 2em;
+            }
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+        }
+
+        p {
+            text-align: justify;
+
+            @media screen and (orientation: "portrait") {
+                text-align: center;
+                font-size: medium;
+            }
+        }
     }
 
-    h1 {
-        margin-top: 100px;
+    #about-container {
+        background-color: rgb(26, 30, 35, 0.8);
+        padding: 20px 40px;
+
+        @media screen and (orientation: "portrait") {
+            margin-top: 10vh;
+        }
     }
 }

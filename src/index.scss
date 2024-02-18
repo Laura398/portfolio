@@ -10,6 +10,7 @@
 
   --main: #61dafb;
   --secondary: #00f2ff4d;
+  --tertiary: #1a1e23;
   // background-color: #242424;
 
   font-synthesis: none;
@@ -35,7 +36,7 @@ body {
   place-items: center;
   min-width: 100vw;
   min-height: 100vh;
-  background: #1a1e23;
+  background: var(--tertiary);
 }
 
 h1 {
