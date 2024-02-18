@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import './App.scss'
-import Router from './router/Router'
 import Header from './views/common/header/Header'
 import PhoneHeader from './views/common/header/PhoneHeader';
 import ScrollToTop from './components/scroll-to-top/ScrollToTop';

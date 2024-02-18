@@ -1,7 +1,6 @@
 
 import { KeyboardArrowUp } from "@mui/icons-material"
 import { Box, Fab, Zoom, useScrollTrigger } from "@mui/material"
-import { blue } from "@mui/material/colors"
 import { useCallback } from "react"
 
 export default function ScrollToTop() {

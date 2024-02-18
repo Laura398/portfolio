@@ -4,7 +4,6 @@ import "./Header.scss";
 import "./PhoneHeader.scss";
 import { Link } from "react-router-dom";
 import React from "react";
-import { blue } from "@mui/material/colors";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 export default function PhoneHeader() {

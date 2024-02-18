@@ -1,6 +1,5 @@
 import Background from "./Background";
 import ExpandCircleDownIcon from '@mui/icons-material/ExpandCircleDown';import "./Home.scss";
-import { blue } from "@mui/material/colors";
 import { scrollTo } from "../../../helpers/scroll-to";
 
 export default function Home() {
