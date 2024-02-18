@@ -4,6 +4,13 @@
 
 <h1 align="center">Portfolio</h1>
 
+<div align="center">
+
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=flat&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB)
+
+</div>
+
 <br />
 
 ## Description
