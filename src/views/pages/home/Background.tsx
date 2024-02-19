@@ -1,58 +1,13 @@
 import "./Background.scss";
 
 export default function Background() {
+  const count = 50;
+  const array = Array.from({ length: count });
   return (
     <div style={{zIndex: "1"}}>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
+        {array.map((_, index) => {
+            return <div key={index} className="bubble"></div>;
+        })}
     </div>
   )
 }
