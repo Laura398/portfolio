@@ -5,6 +5,7 @@ import PhoneHeader from './views/common/header/PhoneHeader';
 import ScrollToTop from './components/scroll-to-top/ScrollToTop';
 import Home from './views/pages/home/Home';
 import About from './views/pages/about/About';
+import Stack from './views/pages/stack/Stack';
 
 const getCurrentDimension = () => {
   return {
@@ -38,6 +39,7 @@ export default function App() {
       {/* <Router /> */}
       <Home />
       <About />
+      <Stack />
     </div>
   )
 }

@@ -1,0 +1,71 @@
+#stack {
+    position: relative;
+    width: 100vw;
+    min-height: 90vh;
+    padding: 0;
+    margin: 0;
+    color: white;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1.5;
+    font-weight: 500;
+    font-family: inherit;
+    background: linear-gradient(#3399ff, white);
+    border-top: white 2px solid;
+    overflow: hidden;
+    padding-top: 10vh;
+
+    #stack-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+
+        h1 {
+            width: 100%;
+            font-size: 2.5em;
+        }
+    
+        .stack-element {
+            width: 40%;
+            height: 200px;
+    
+            img {
+                width: 50px;
+                height: 50px;
+                object-fit: contain;
+                margin: 5px;
+            }
+
+            .row-card {
+                width: 100%;
+                height: auto;
+            }
+    
+    
+            .stack-logos {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: center;
+
+                @media screen and (orientation: portrait){
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+
+            @media screen and (orientation: portrait) {
+                width: 80%;
+                height: auto;
+                margin: 10px;
+            }
+        }
+    }
+
+    
+}
