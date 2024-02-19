@@ -27,7 +27,7 @@ export default function PhoneHeader() {
             </Link>
         </AccordionSummary>
         <AccordionDetails id="accordion-details">
-            <Button><a href="/" className='button' onClick={toggleAcordion}>Home</a></Button>
+            <Button><a href="#" className='button' onClick={toggleAcordion}>Home</a></Button>
             <Button><a href="#about" className='button' onClick={toggleAcordion}>About</a></Button>
             <Button><a href="#services" className='button' onClick={toggleAcordion}>Services</a></Button>
             <Button><a href="#portfolio" className='button' onClick={toggleAcordion}>Portfolio</a></Button>

@@ -30,6 +30,7 @@
         height: 120px;
         width: 120px;
         border-radius: 50%;
+        cursor: pointer;
       }
 
       &:hover {
@@ -60,6 +61,7 @@
         margin: 20px 0;
         padding: 0;
         text-shadow: 3px 10px 5px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
 
         &:hover {
           animation: growing 1.5s infinite alternate;
@@ -116,6 +118,8 @@
       }
 
       h2 {
+        cursor: pointer;
+
         @media screen and (orientation: "portrait"){
             font-size: 1em;
         }
@@ -127,6 +131,12 @@
 
       .arrow {
         transform: scale(1.8);
+        cursor: pointer;
+        color: var(--main);
+
+        &:hover {
+          color: white;
+        }
       }
     }
   }

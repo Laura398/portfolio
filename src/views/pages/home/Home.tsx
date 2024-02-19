@@ -26,7 +26,7 @@ export default function Home() {
                 <div className="card">
                     <p className="go-down">
                         <a onClick={scrollToAbout}>
-                            <ExpandCircleDownIcon className="arrow" fontSize="large" sx={{ color: "#61dafb" }} />
+                            <ExpandCircleDownIcon className="arrow" fontSize="large" />
                         </a>
                     </p>
                 </div>
