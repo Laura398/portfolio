@@ -40,12 +40,16 @@ export default function Scroll(props: Props) {
             element_to_scroll_to.scrollIntoView({behavior:"smooth"});
         }
       }, [])
+
+    const classNames = []
+    if (props.margin.transform) classNames.push("transform")
+    if (props.margin.position === "absolute" && props.scrollTo !== "about") classNames.push("hide")
       
     return (
       <Zoom in={props.trigger && props.trigger}>
         <Box
           role="presentation"
-          className={props.margin.transform ? "transform" : ""}
+          className={classNames.join(" ")}
           sx={sx}
         >
         <Fab
