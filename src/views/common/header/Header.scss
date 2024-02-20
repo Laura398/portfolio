@@ -20,12 +20,40 @@
     }
 
     .header__menu {
+
+        .selected {
+            color: var(--main);
+        }
+
+        &.phone {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: var(--header-height);
+            background-color: var(--tertiary);
+            z-index: 100;
+
+            .logo {
+                width: 50px;
+                border-radius: 50%;
+            }
+        }
+
         a {
             color: white;
             margin: 0 1em;
 
             &:hover {
                 color: var(--main);
+            }
+
+            @media screen and (max-width: 768px) {
+                margin: 0 0.6em;
             }
         }
 
