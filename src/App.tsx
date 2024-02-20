@@ -6,6 +6,7 @@ import ScrollToTop from './components/scroll-to-top/ScrollToTop';
 import Home from './views/pages/home/Home';
 import About from './views/pages/about/About';
 import Stack from './views/pages/stack/Stack';
+import HomePortfolio from './views/pages/home-portfolio/HomePortfolio';
 
 const getCurrentDimension = () => {
   return {
@@ -39,7 +40,10 @@ export default function App() {
       {/* <Router /> */}
       <Home />
       <About />
+      <hr className="white" />
       <Stack />
+      <hr className="main" />
+      <HomePortfolio />
     </div>
   )
 }

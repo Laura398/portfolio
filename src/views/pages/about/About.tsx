@@ -1,7 +1,15 @@
 import "./About.scss";
 import AboutBackground from "./Background";
+import { CENTER_MARGIN } from "../../../interfaces/constants";
+import Scroll from "../../../components/buttons/Scroll";
 
 export default function About() {
+
+    const margin = {
+        ...CENTER_MARGIN,
+        bottom: "2%",
+    }
+
     return (
         <div id="about">
             <AboutBackground />
@@ -26,6 +34,8 @@ export default function About() {
                     </div>
                 </div>
             </div>
+
+            <Scroll trigger={true} margin={margin} scrollTo="stack" />
         </div>
     )
 }

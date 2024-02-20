@@ -10,10 +10,10 @@ export default function Header() {
                 </a>
             </div>
             <div className="header__menu">
-                <a href="#" className="nav-selected">Home</a>
+                <a href="#" className="nav-selected" >Home</a>
                 <a href="#about">About</a>
                 <a href="#stack">Stack</a>
-                <a href="#portfolio">Portfolio</a>
+                <a href="#home-portfolio">Portfolio</a>
                 <a href="#contact">Contact</a>
                 <a target="_blank" href="https://www.linkedin.com/in/laura-mathieu-95385a18b"><LinkedInIcon className="linkedin-icon" fontSize='large' sx={{ color: "white" }} /></a>
             </div>

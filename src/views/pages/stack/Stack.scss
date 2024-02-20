@@ -12,8 +12,7 @@
     line-height: 1.5;
     font-weight: 500;
     font-family: inherit;
-    background: linear-gradient(#3399ff, white);
-    border-top: white 2px solid;
+    background: linear-gradient(var(--main), white);
     overflow: hidden;
     padding-top: 10vh;
 
@@ -79,7 +78,7 @@
         }
 
         @media screen and (orientation: portrait) {
-            padding-bottom: 5vh;
+            padding-bottom: 15vh;
         }
     }
 

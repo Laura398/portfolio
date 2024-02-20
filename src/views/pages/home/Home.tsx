@@ -1,12 +1,14 @@
 import Background from "./Background";
-import ExpandCircleDownIcon from '@mui/icons-material/ExpandCircleDown';import "./Home.scss";
-import { scrollTo } from "../../../helpers/scroll-to";
+import "./Home.scss";
+import Scroll from "../../../components/buttons/Scroll";
+import { CENTER_MARGIN } from "../../../interfaces/constants";
 
 export default function Home() {
     const htmlString = "<Laura Mathieu />"
 
-    function scrollToAbout() {
-        scrollTo("about");
+    const margin = {
+        ...CENTER_MARGIN,
+        bottom: "20%",
     }
     
     return (
@@ -23,14 +25,8 @@ export default function Home() {
                 <a className="job">
                     <h2>Web Developer FullStack</h2>
                 </a>
-                <div className="card">
-                    <p className="go-down">
-                        <a onClick={scrollToAbout}>
-                            <ExpandCircleDownIcon className="arrow" fontSize="large" />
-                        </a>
-                    </p>
-                </div>
             </div>
+            <Scroll trigger={true} margin={margin} scrollTo="about" />
         </div>
     )
 }
