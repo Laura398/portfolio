@@ -1,0 +1,30 @@
+#projects-list-phone {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+
+    .project-phone {
+        width: 60px;
+        height: 120px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 5px;
+        margin: 10px;
+    }
+
+    .projects-icons {
+        width: 60px;
+        height: 120px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px var(--tertiary);
+        opacity: 0.5;
+
+        &.selected {
+            opacity: 1;
+        }
+    }
+}

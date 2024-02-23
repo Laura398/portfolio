@@ -5,13 +5,7 @@ import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import DataObjectIcon from '@mui/icons-material/DataObject';
 import PermMediaIcon from '@mui/icons-material/PermMedia';
 import MailIcon from '@mui/icons-material/Mail';
-
-const getCurrentDimension = () => {
-    return {
-        width: window.innerWidth,
-        height: window.innerHeight
-    }
-  }
+import { getCurrentDimension } from '../../../helpers/get-current-dimension';
 
 export default function Header() {
     const [screenSize, setScreenSize] = useState(getCurrentDimension());
@@ -29,7 +23,6 @@ export default function Header() {
             window.removeEventListener('resize', updateDimension);
         })
     }, [screenSize])
-
 
     return (
         <div className="header">
