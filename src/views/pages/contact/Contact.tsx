@@ -108,10 +108,10 @@ export default function Contact () {
                             </Sheet>
                             <Box sx={{ display: 'flex', gap: 1.5, '& > button': { flex: 1 } }}>
                                 <Button variant="outlined" color="neutral" onClick={goToGithub} sx={{color: "white"}}>
-                                    Voir sur GitHub
+                                    See my GitHub
                                 </Button>
                                 <Button variant="solid" color="primary" onClick={goToLinkedIn} sx={{backgroundColor: "#61dafb", color: "black"}}>
-                                    Voir sur LinkedIn
+                                    See my LinkedIn
                                 </Button>
                             </Box>
                         </CardContent>
