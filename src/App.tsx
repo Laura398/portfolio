@@ -16,7 +16,7 @@ export default function App() {
       <About />
       <hr className="white" />
       <Stack />
-      <hr className="main" />
+      {/* <hr className="main" /> */}
       <HomePortfolio />
       <Contact />
     </div>
