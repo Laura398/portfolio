@@ -25,7 +25,7 @@ export default function HomePortfolio() {
         <div id="home-portfolio">
             <h1>Portfolio</h1>
             <div id="home-portfolio-container">
-                {!isPhone ? <Carousel /> : <Projects />}
+                {isPhone ? <Projects /> : <Carousel />}
             </div>
         </div>
     )
