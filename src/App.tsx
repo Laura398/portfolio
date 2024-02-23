@@ -12,14 +12,12 @@ export default function App() {
     <div className='app'>
       <ScrollToTop />
       <Header />
-      {/* <Router /> */}
       <Home />
       <About />
       <hr className="white" />
       <Stack />
       <hr className="main" />
       <HomePortfolio />
-      <hr className="main" />
       <Contact />
     </div>
   )
