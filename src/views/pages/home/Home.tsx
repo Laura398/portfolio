@@ -1,4 +1,3 @@
-import Background from "./Background";
 import "./Home.scss";
 import Scroll from "../../../components/buttons/Scroll";
 import { CENTER_MARGIN } from "../../../interfaces/constants";
@@ -13,8 +12,6 @@ export default function Home() {
     
     return (
         <div className="bubbles">
-            <Background />
-
             <div className="home">
                 <div className="avatar">
                     <img src="/assets/avatar.jpeg" alt="React logo" />

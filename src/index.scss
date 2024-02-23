@@ -9,7 +9,8 @@
   color: rgba(255, 255, 255, 0.87);
 
   --main: #61dafb;
-  --secondary: #00f2ff4d;
+  --secondary: rgba(91, 128, 174, 0.471);;
+  // --secondary: white;
   --tertiary: #1a1e23;
 
   --header-height: 65px;
@@ -44,6 +45,7 @@ body {
 h1 {
   font-size: 3em;
   line-height: 1.1;
+  color: var(--main);
 }
 
 button {

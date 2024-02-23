@@ -1,10 +1,8 @@
 import "./About.scss";
-import AboutBackground from "./Background";
 import { CENTER_MARGIN } from "../../../interfaces/constants";
 import Scroll from "../../../components/buttons/Scroll";
 
 export default function About() {
-
     const margin = {
         ...CENTER_MARGIN,
         bottom: "2%",
@@ -12,8 +10,6 @@ export default function About() {
 
     return (
         <div id="about">
-            <AboutBackground />
-
             <div id="about-container" className="about-element">
                 <h1>About Me</h1>
                 <img src="/assets/avatar2.jpeg" alt="Avatar" />

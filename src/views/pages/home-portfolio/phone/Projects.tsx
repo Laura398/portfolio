@@ -1,8 +1,8 @@
 import React from 'react';
 import './Projects.scss';
-import { Project } from '../../../interfaces/types';
+import { Project } from '../../../../interfaces/types';
 import OneProject from './OneProject';
-import { PROJECTS } from '../../../interfaces/constants';
+import { PROJECTS } from '../../../../interfaces/constants';
 
 export default function Projects() {
     const projects = PROJECTS;

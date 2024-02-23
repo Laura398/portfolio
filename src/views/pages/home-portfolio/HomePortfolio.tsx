@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { getCurrentDimension } from '../../../helpers/get-current-dimension';
-import Carousel from './Carousel';
+import Carousel from './desktop/Carousel';
 import './HomePortfolio.scss';
-import Projects from './Projects';
+import Projects from './phone/Projects';
 
 export default function HomePortfolio() {
     const [screenSize, setScreenSize] = useState(getCurrentDimension());

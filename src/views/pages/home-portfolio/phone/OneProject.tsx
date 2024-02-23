@@ -1,5 +1,5 @@
 import { AspectRatio, Card, CardContent, CardOverflow, Typography } from "@mui/joy";
-import { Project } from "../../../interfaces/types";
+import { Project } from "../../../../interfaces/types";
 
 export default function OneProject(props: {project: Project}) {
     const {project} = props;
@@ -9,8 +9,8 @@ export default function OneProject(props: {project: Project}) {
     }
     
     return (
-        <Card variant="outlined" sx={{ width: 320, margin: "auto" }} onClick={goTo}>
-            <CardOverflow>
+        <Card variant="outlined" sx={{ width: 320, margin: "auto", backgroundColor: "rgba(91, 128, 174, 0.471)" }} onClick={goTo}>
+            <CardOverflow sx={{borderBottom: "1px solid white"}}>
                 <AspectRatio ratio="2">
                 <img
                     src={project.image}
@@ -20,9 +20,9 @@ export default function OneProject(props: {project: Project}) {
                 </AspectRatio>
             </CardOverflow>
             <CardContent>
-                <Typography level="title-md">{project.name}</Typography>
-                <Typography level="body-sm">{project.type}</Typography>
-                <Typography level="body-sm">{project.dates}</Typography>
+                <Typography level="title-md" textColor="#61dafb">{project.name}</Typography>
+                <Typography level="body-sm" textColor="white">{project.type}</Typography>
+                <Typography level="body-sm" textColor="white">{project.dates}</Typography>
             </CardContent>
         </Card>
     )

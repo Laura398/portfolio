@@ -45,3 +45,47 @@ export const PROJECTS: Project[] = [
         link: "https://laura398.github.io/LauraMathieu_3_05032021/"
     }
 ];
+
+export const STACK = [
+    {
+        title: "Front-End",
+        logos: [
+            "/assets/stack/js-logo.png",
+            "/assets/stack/ts-logo.png",
+            "/assets/stack/react-logo.png",
+            "/assets/stack/angular-logo.png",
+            "/assets/stack/vue-logo.png",
+            "/assets/stack/meteor-logo.png"
+        ]
+    },
+    {
+        title: "Back-End",
+        logos: [
+            "/assets/stack/node-logo.png",
+            "/assets/stack/nest-logo.png",
+            "/assets/stack/php-logo.png",
+            "/assets/stack/laravel-logo.png",
+            "/assets/stack/python-logo.png",
+            "/assets/stack/django-logo.png"
+        ]
+    },
+    {
+        title: "Database",
+        logos: [
+            "/assets/stack/mongo-logo.png",
+            "/assets/stack/mysql-logo.png",
+            "/assets/stack/postgres-logo.png"
+        ]
+    },
+    {
+        title: "DevOps",
+        logos: [
+            "/assets/stack/docker-logo.png",
+            "/assets/stack/kubernetes-logo.png",
+            "/assets/stack/render-logo.png",
+            "/assets/stack/github-logo.png",
+            "/assets/stack/gitlab-logo.png"
+        ]
+    }
+
+]

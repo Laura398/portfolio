@@ -4,7 +4,7 @@ import CardOverflow from '@mui/joy/CardOverflow';
 
 export default function RowCard(props: { item: { title: string; logos: string[] } }) {
   return (
-    <Card orientation="horizontal" variant="outlined" id="row-card">
+    <Card orientation="horizontal" variant="outlined" id="row-card" sx={{backgroundColor: "rgba(91, 128, 174, 0.471)"}}>
       <CardContent id={props.item.title.toLowerCase()} className="stack-logos">
         {props.item.logos.map((logo, index) => {
             return <img key={index} src={logo} alt={props.item.title} />;

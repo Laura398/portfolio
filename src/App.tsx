@@ -14,9 +14,7 @@ export default function App() {
       <Header />
       <Home />
       <About />
-      <hr className="white" />
       <Stack />
-      {/* <hr className="main" /> */}
       <HomePortfolio />
       <Contact />
     </div>
