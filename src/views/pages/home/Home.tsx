@@ -1,8 +1,10 @@
 import "./Home.scss";
 import Scroll from "../../../components/buttons/Scroll";
 import { CENTER_MARGIN } from "../../../interfaces/constants";
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
+    const { t } = useTranslation(); 
     const htmlString = "<Laura Mathieu />"
 
     const margin = {
@@ -20,7 +22,7 @@ export default function Home() {
                     <h1>{htmlString}</h1>
                 </a>
                 <a className="job">
-                    <h2>Web Developer FullStack</h2>
+                    <h2>{t("title")}</h2>
                 </a>
             </div>
             <Scroll trigger={true} margin={margin} scrollTo="about" />

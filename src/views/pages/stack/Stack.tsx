@@ -2,8 +2,10 @@ import Scroll from "../../../components/buttons/Scroll";
 import RowCard from "./Card";
 import { CENTER_MARGIN, STACK } from "../../../interfaces/constants";
 import "./Stack.scss";
+import { useTranslation } from "react-i18next";
 
 export default function Stack() {
+    const { t } = useTranslation();
     const margin = {
         ...CENTER_MARGIN,
         bottom: "2%",
@@ -11,7 +13,7 @@ export default function Stack() {
     
     return (
         <div id="stack">
-            <h1>My Stack</h1>
+            <h1>{t('myStack')}</h1>
             <div id="stack-container">
                 {STACK.map((item, index) => {
                     return (

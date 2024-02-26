@@ -1,6 +1,9 @@
 import { Avatar, Card, CardContent, Chip, Typography } from "@mui/joy";
+import { useTranslation } from "react-i18next";
 
 export default function MeCard() {
+    const { t } = useTranslation();
+
     return (
         <Card className="about-card">
             <CardContent sx={{ alignItems: 'center', textAlign: 'center', padding: "10px" }}>
@@ -19,13 +22,9 @@ export default function MeCard() {
                 >
                     PRO
                 </Chip>
-                <Typography level="h2" textColor='#61dafb'>About Me</Typography>
+                <Typography level="h2" textColor='#61dafb'>{t("aboutMe")}</Typography>
                 <Typography level="body-lg" sx={{ maxWidth: '95%' }} textColor='white'>
-                    I'm Laura Mathieu, a web developer based in France. 
-                    I'm currently a student at the school Ynov Informatique in Toulouse, 
-                    studying web development. I'm passionate about using technology to solve 
-                    problems and improve the world around us. I'm currently seeking opportunities
-                        to work on projects that make a positive impact on the world.
+                    {t("aboutMeText")}
                 </Typography>
             </CardContent>
         </Card>

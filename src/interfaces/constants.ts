@@ -70,7 +70,7 @@ export const STACK = [
         ]
     },
     {
-        title: "Database",
+        title: "Databases",
         logos: [
             "/assets/stack/mongo-logo.png",
             "/assets/stack/mysql-logo.png",

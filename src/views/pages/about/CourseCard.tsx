@@ -1,6 +1,9 @@
 import { Avatar, Card, CardContent, Chip, Divider, Typography } from "@mui/joy";
+import { useTranslation } from "react-i18next";
 
 export default function CourseCard() {
+    const { t } = useTranslation();
+
     return (
         <Card className="about-card">
             <CardContent sx={{ alignItems: 'center', textAlign: 'center' }}>
@@ -19,29 +22,29 @@ export default function CourseCard() {
                     >
                         EXP
                     </Chip>
-                <Typography level="h2" textColor='#61dafb' sx={{padding: 0, margin: 0}}>Course</Typography>
+                <Typography level="h2" textColor='#61dafb' sx={{padding: 0, margin: 0}}>{t('course')}</Typography>
                 <CardContent className="about-card-main-content">
                     <CardContent>
                         <Divider className="about-divider">
                             <Typography className="about-typo" level="body-lg"  textColor='black'>
-                                💼 Experience
+                                💼 {t('experience')}
                             </Typography>
                         </Divider>
                         <Typography className="about-typo" level="body-lg"  textColor='white'>
-                            <b>3 years apprenticeship</b> in Web Development in Upschool and Ynov Informatique
+                            <b>{t('exp1Title')}</b> - {t('exp1Text')}
                         </Typography>
                     </CardContent>
                     <CardContent>
                         <Divider className="about-divider">
                             <Typography className="about-typo" level="body-lg"  textColor='black'>
-                                📚 Certifications
+                                📚 {t('certifications')}
                             </Typography>
                         </Divider>
                         <Typography className="about-typo" level="body-lg" textColor='white'>
-                            <b>Masters in Web Development</b> - Ynov Informatiques
+                            <b>{t('certif1Title')}</b> - {t('certif1Text')}
                         </Typography>
                         <Typography className="about-typo" level="body-lg"  textColor='white'>
-                            <b>RNCP Title Web Developer Level 5</b> - Openclassrooms   
+                            <b>{t('certif2Title')}</b> - {t('certif2Text')}   
                         </Typography>
                     </CardContent>
                 </CardContent>

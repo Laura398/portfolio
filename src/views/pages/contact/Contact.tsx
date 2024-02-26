@@ -1,7 +1,10 @@
 import { AspectRatio, Box, Button, Card, CardContent, Sheet, Typography } from "@mui/joy";
 import "./Contact.scss";
+import { useTranslation } from "react-i18next";
 
 export default function Contact () {
+    const { t } = useTranslation();
+
     const sendMail = () => {
         window.location.href = "mailto:laura.mathieu398@gmail.com";
     }
@@ -16,7 +19,9 @@ export default function Contact () {
 
     return (
         <div id="contact">
-            <h1>Contact me</h1>
+            <h1>
+                {t('contactMe')}
+            </h1>
             <div id="contact-container">
                 <Box
                     sx={{
@@ -44,7 +49,7 @@ export default function Contact () {
                                 Laura Mathieu
                             </Typography>
                             <Typography level="body-sm" fontWeight="lg" textColor="white">
-                                FullStack Web Developer
+                                {t('title')}
                             </Typography>
                             <Sheet
                                 sx={{
@@ -62,11 +67,11 @@ export default function Contact () {
                                     <Typography level="body-xs" fontWeight="lg" textColor="#61dafb">
                                         Experience
                                     </Typography>
-                                    <Typography fontWeight="lg" textColor="white">3 years</Typography>
+                                    <Typography fontWeight="lg" textColor="white">3 {t('years')}</Typography>
                                 </div>
                                 <div>
                                     <Typography level="body-xs" fontWeight="lg" textColor="#61dafb">
-                                        Projects
+                                        {t('projects')}
                                     </Typography>
                                     <Typography fontWeight="lg" textColor="white">5+</Typography>
                                 </div>
@@ -83,19 +88,19 @@ export default function Contact () {
                             >
                                 <div>
                                     <Typography level="body-xs" fontWeight="lg" textColor="#61dafb">
-                                        I live in
+                                        {t('ILiveIn')}
                                     </Typography>
-                                    <Typography fontWeight="lg" textColor="white">Toulouse</Typography>
+                                    <Typography fontWeight="lg" textColor="white">{t('Toulouse')}</Typography>
                                 </div>
                                 <div>
                                     <Typography level="body-xs" fontWeight="lg" textColor="#61dafb">
-                                        You can call me at
+                                        {t('callMeAt')}
                                     </Typography>
-                                    <Typography fontWeight="lg" textColor="white">0683794378</Typography>
+                                    <Typography fontWeight="lg" textColor="white">{t('phone')}</Typography>
                                 </div>
                                 <div>
                                     <Typography level="body-xs" fontWeight="lg" textColor="#61dafb">
-                                        Or send me an email at
+                                        {t('sendMeAnEmail')}
                                     </Typography>
                                     <Typography
                                         fontWeight="lg"
@@ -108,10 +113,10 @@ export default function Contact () {
                             </Sheet>
                             <Box sx={{ display: 'flex', gap: 1.5, '& > button': { flex: 1 } }}>
                                 <Button variant="outlined" color="neutral" onClick={goToGithub} sx={{color: "white"}}>
-                                    See my GitHub
+                                    {t('seeGitHub')}
                                 </Button>
                                 <Button variant="solid" color="primary" onClick={goToLinkedIn} sx={{backgroundColor: "#61dafb", color: "black"}}>
-                                    See my LinkedIn
+                                    {t('seeLinkedIn')}
                                 </Button>
                             </Box>
                         </CardContent>

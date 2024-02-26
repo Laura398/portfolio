@@ -1,13 +1,15 @@
 import { useEffect, useState } from 'react';
 import './Header.scss';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import DataObjectIcon from '@mui/icons-material/DataObject';
 import PermMediaIcon from '@mui/icons-material/PermMedia';
 import MailIcon from '@mui/icons-material/Mail';
 import { getCurrentDimension } from '../../../helpers/get-current-dimension';
+import LanguageSelector from '../language-selector/LanguageSelector';
+import { useTranslation } from 'react-i18next';
 
 export default function Header() {
+    const { t } = useTranslation();
     const [screenSize, setScreenSize] = useState(getCurrentDimension());
     const [isPhone, setIsPhone] = useState(screenSize.width < 768);
 
@@ -50,50 +52,27 @@ export default function Header() {
                     <a href="#contact">
                         <MailIcon id="contact-id" className="header-icons" fontSize='large' sx={{ color: "white" }} />
                     </a>
-                    <a target="_blank" href="https://www.linkedin.com/in/laura-mathieu-95385a18b">
-                        <LinkedInIcon fontSize='large' sx={{ color: "white" }} />
-                    </a>
+                    <LanguageSelector />
                 </div> :
                 <div className="header__menu">
                     <a href="#">
-                        Home
+                        {t("home")}
                     </a>
                     <a href="#about">
-                        About
+                        {t("about")}
                     </a>
                     <a href="#stack">
-                        Stack
+                        {t("stack")}
                     </a>
                     <a href="#home-portfolio">
-                        Portfolio
+                        {t("portfolio")}
                     </a>
                     <a href="#contact">
-                        Contact
+                        {t("contact")}
                     </a>
-                    <a target="_blank" href="https://www.linkedin.com/in/laura-mathieu-95385a18b">
-                        <LinkedInIcon className="linkedin-icon" fontSize='large' sx={{ color: "white" }} />
-                    </a>
+                    <LanguageSelector />
                 </div>
             }
-
-
-
-                {/* <a href="#" className="nav-selected" >
-                    {isPhone ? "" : "Home"}
-                </a>
-                <a href="#about">
-                    {isPhone ? <AccountBoxIcon fontSize='large' sx={{ color: "white" }} /> : "About"}
-                </a>
-                <a href="#stack">
-                    {isPhone ? <DataObjectIcon fontSize='large' sx={{ color: "white" }} /> : "Stack"}
-                </a>
-                <a href="#home-portfolio">
-                    {isPhone ? <PermMediaIcon fontSize='large' sx={{ color: "white" }} /> : "Portfolio"}
-                </a>
-                <a href="#contact">
-                    {isPhone ? <PermContactCalendarIcon fontSize='large' sx={{ color: "white" }} /> : "Contact"}
-                </a>
-                <a target="_blank" href="https://www.linkedin.com/in/laura-mathieu-95385a18b"><LinkedInIcon className="linkedin-icon" fontSize='large' sx={{ color: "white" }} /></a> */}
         </div>
     )
 }
