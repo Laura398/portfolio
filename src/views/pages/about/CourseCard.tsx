@@ -2,9 +2,8 @@ import { Avatar, Card, CardContent, Divider, Typography } from "@mui/joy";
 
 export default function CourseCard() {
     return (
-        <Card className="about-card"
-            >
-            <Avatar src="/assets/infos.png" sx={{ '--Avatar-size': '6rem', border: "1px solid white" }} />
+        <Card className="about-card">
+            <Avatar src="/assets/infos.png" sx={{ '--Avatar-size': '8rem', border: "1px solid white" }} />
             <Typography level="h2" textColor='#61dafb'>Course</Typography>
             <CardContent className="about-card-main-content">
                 <CardContent>

@@ -28,12 +28,13 @@
         padding: 20px;
         align-items: center;
         text-align: center;
+        min-height: 60vh;
         
         .about-card-main-content {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            align-items: center;
+            align-items:flex-start;
             text-align: center;
             padding: 10px;
 
