@@ -1,5 +1,6 @@
 import { Project } from "./types";
 
+
 export const CENTER_MARGIN = {
     position: "absolute",
     left: "50%",
@@ -70,7 +71,7 @@ export const STACK = [
         ]
     },
     {
-        title: "Databases",
+        title: "Database",
         logos: [
             "/assets/stack/mongo-logo.png",
             "/assets/stack/mysql-logo.png",
