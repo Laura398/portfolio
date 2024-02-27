@@ -4,6 +4,5 @@ export type Project = {
     type: string;
     image: string;
     icon: string;
-    dates: string;
     link: string;
 }

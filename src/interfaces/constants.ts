@@ -15,7 +15,6 @@ export const PROJECTS: Project[] = [
         type: "Personnal project",
         image: "/assets/sites/ayakashi.png",
         icon: "/assets/sites/ayakashi-phone.png",
-        dates: "2024, January - 2024, February",
         link: "https://ayakashi-project.onrender.com/"
     },
     {
@@ -24,7 +23,6 @@ export const PROJECTS: Project[] = [
         type: "School project",
         image: "/assets/sites/jdrg.png",
         icon: "/assets/sites/jdrg-phone.png",
-        dates: "2023, April",
         link: ""
     },
     {
@@ -33,7 +31,6 @@ export const PROJECTS: Project[] = [
         type: "School project",
         image: "/assets/sites/reservia.png",
         icon: "/assets/sites/reservia-phone.png",
-        dates: "2021, March",
         link: "https://laura398.github.io/LauraMathieu_2_08032021/"
     },
     {
@@ -42,7 +39,6 @@ export const PROJECTS: Project[] = [
         type: "School project",
         image: "/assets/sites/ohmyfood.png",
         icon: "/assets/sites/ohmyfood-phone.png",
-        dates: "2021, April",
         link: "https://laura398.github.io/LauraMathieu_3_05032021/"
     }
 ];

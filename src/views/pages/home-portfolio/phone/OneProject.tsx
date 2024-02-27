@@ -1,8 +1,12 @@
 import { AspectRatio, Card, CardContent, CardOverflow, Typography } from "@mui/joy";
 import { Project } from "../../../../interfaces/types";
+import { useTranslation } from "react-i18next";
 
 export default function OneProject(props: {project: Project}) {
+    const { t } = useTranslation();
     const {project} = props;
+    
+    const type = t(project.type);
     
     const goTo = () => {
         window.open(project.link, "_blank");
@@ -21,8 +25,7 @@ export default function OneProject(props: {project: Project}) {
             </CardOverflow>
             <CardContent>
                 <Typography level="title-md" textColor="#61dafb">{project.name}</Typography>
-                <Typography level="body-sm" textColor="white">{project.type}</Typography>
-                <Typography level="body-sm" textColor="white">{project.dates}</Typography>
+                <Typography level="body-sm" textColor="white">{type}</Typography>
             </CardContent>
         </Card>
     )

@@ -17,7 +17,7 @@
     "certif2Title": "Titre RNCP Développeur Web Niveau 5",
     "certif2Text": "Openclassrooms",
     "myStack": "Ma Stack",
-    "stack-database": "Base de données",
+    "stack-database": "BDD",
     "contactMe": "Contactez-moi",
     "projects": "Projets",
     "years": "ans",
@@ -27,5 +27,7 @@
     "phone": "06 83 79 43 78",
     "sendMeAnEmail": "ou m'envoyer un email à",
     "seeGitHub": "Voir mon GitHub",
-    "seeLinkedIn": "Voir mon LinkedIn"
+    "seeLinkedIn": "Voir mon LinkedIn",
+    "Personnal project": "Projet personnel",
+    "School project": "Projet scolaire"
 }
