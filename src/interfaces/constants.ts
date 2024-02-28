@@ -47,41 +47,101 @@ export const STACK = [
     {
         title: "Front-End",
         logos: [
-            "/assets/stack/js-logo.png",
-            "/assets/stack/ts-logo.png",
-            "/assets/stack/react-logo.png",
-            "/assets/stack/angular-logo.png",
-            "/assets/stack/vue-logo.png",
-            "/assets/stack/meteor-logo.png"
+            {
+                title: "JavaScript",
+                logo: "/assets/stack/js-logo.png"
+            },
+            {
+                title: "TypeScript",
+                logo: "/assets/stack/ts-logo.png"
+            },
+            {
+                title: "React",
+                logo: "/assets/stack/react-logo.png"
+            },
+            {
+                title: "Angular",
+                logo: "/assets/stack/angular-logo.png"
+            },
+            {
+                title: "Vue",
+                logo: "/assets/stack/vue-logo.png"
+            },
+            {
+                title: "Meteor",
+                logo: "/assets/stack/meteor-logo.png"
+            }
         ]
     },
     {
         title: "Back-End",
         logos: [
-            "/assets/stack/node-logo.png",
-            "/assets/stack/nest-logo.png",
-            "/assets/stack/php-logo.png",
-            "/assets/stack/laravel-logo.png",
-            "/assets/stack/python-logo.png",
-            "/assets/stack/django-logo.png"
+            {
+                title: "Node",
+                logo: "/assets/stack/node-logo.png"
+            },
+            {
+                title: "Nest",
+                logo: "/assets/stack/nest-logo.png"
+            },
+            {
+                title: "PHP",
+                logo: "/assets/stack/php-logo.png"
+            },
+            {
+                title: "Laravel",
+                logo: "/assets/stack/laravel-logo.png"
+            },
+            {
+                title: "Python",
+                logo: "/assets/stack/python-logo.png"
+            },
+            {
+                title: "Django",
+                logo: "/assets/stack/django-logo.png"
+            }
         ]
     },
     {
         title: "Database",
         logos: [
-            "/assets/stack/mongo-logo.png",
-            "/assets/stack/mysql-logo.png",
-            "/assets/stack/postgres-logo.png"
+            {
+                title: "MongoDB",
+                logo: "/assets/stack/mongo-logo.png"
+            },
+            {
+                title: "MySQL",
+                logo: "/assets/stack/mysql-logo.png"
+            },
+            {
+                title: "PostgreSQL",
+                logo: "/assets/stack/postgres-logo.png"
+            }
         ]
     },
     {
         title: "DevOps",
         logos: [
-            "/assets/stack/docker-logo.png",
-            "/assets/stack/kubernetes-logo.png",
-            "/assets/stack/render-logo.png",
-            "/assets/stack/github-logo.png",
-            "/assets/stack/gitlab-logo.png"
+            {
+                title: "Docker",
+                logo: "/assets/stack/docker-logo.png"
+            },
+            {
+                title: "Kubernetes",
+                logo: "/assets/stack/kubernetes-logo.png"
+            },
+            {
+                title: "Render",
+                logo: "/assets/stack/render-logo.png"
+            },
+            {
+                title: "GitHub",
+                logo: "/assets/stack/github-logo.png"
+            },
+            {
+                title: "GitLab",
+                logo: "/assets/stack/gitlab-logo.png"
+            }
         ]
     }
 
