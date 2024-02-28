@@ -16,7 +16,7 @@ export default function RowCard(props: { item: { title: string; logos: {title: s
       <CardContent id={props.item.title.toLowerCase()} className="stack-logos">
         {props.item.logos.map((logo, index) => {
             return (
-            <Tooltip title={logo.title} variant="plain">
+            <Tooltip title={logo.title} variant="plain" enterTouchDelay={0}>
               <img key={index} src={logo.logo} alt={title} />
             </Tooltip>);
         })}
