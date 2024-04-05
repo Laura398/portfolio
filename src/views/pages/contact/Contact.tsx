@@ -10,7 +10,12 @@ export default function Contact () {
     }
 
     const goToLinkedIn = () => {
-        window.open("https://www.linkedin.com/in/laura-mathieu-lm", "_blank");
+        const languageCode = localStorage.getItem("lang");
+        if (languageCode === "fr") {
+            window.open("https://www.linkedin.com/in/laura-mathieu-lm", "_blank");
+        } else {
+            window.open("https://www.linkedin.com/in/laura-mathieu-lm/?locale=en_US", "_blank");
+        }
     }
 
     const goToGithub = () => {
