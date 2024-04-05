@@ -6,11 +6,11 @@ export default function Contact () {
     const { t } = useTranslation();
 
     const sendMail = () => {
-        window.location.href = "mailto:laura.mathieu398@gmail.com";
+        window.location.href = "mailto:laura.mathieu@protonmail.com";
     }
 
     const goToLinkedIn = () => {
-        window.open("https://www.linkedin.com/in/laura-mathieu-95385a18b", "_blank");
+        window.open("https://www.linkedin.com/in/laura-mathieu-lm", "_blank");
     }
 
     const goToGithub = () => {
@@ -107,7 +107,7 @@ export default function Contact () {
                                         sx={{ cursor: 'pointer', textDecoration: 'underline', color: "white"}}
                                         onClick={sendMail}
                                     >
-                                        laura.mathieu398@gmail.com
+                                        laura.mathieu@protonmail.com
                                     </Typography>
                                 </div>
                             </Sheet>
