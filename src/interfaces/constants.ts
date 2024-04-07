@@ -15,7 +15,7 @@ export const PROJECTS: Project[] = [
         type: "Personnal project",
         image: "/assets/sites/ayakashi.png",
         icon: "/assets/sites/ayakashi-phone.png",
-        link: "https://ayakashi-project.onrender.com/"
+        link: "https://www.ayakashi-project.lauramathieu.com/"
     },
     {
         id: 2,
