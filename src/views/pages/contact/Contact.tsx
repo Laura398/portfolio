@@ -179,10 +179,14 @@ export default function Contact () {
                                     </div>
                                 </Sheet>
                                 <Box sx={{ display: 'flex', gap: 1.5, '& > button': { flex: 1 } }}>
-                                    <Button variant="outlined" color="neutral" onClick={goToGithub} sx={{color: "white"}}>
+                                    <Button variant="outlined" color="neutral" onClick={goToGithub} sx={{color: "white", "&:hover": {
+                                                color: "black",
+                                            }}}>
                                         {t('seeGitHub')}
                                     </Button>
-                                    <Button variant="solid" color="primary" onClick={goToLinkedIn} sx={{backgroundColor: "#61dafb", color: "black"}}>
+                                    <Button variant="solid" color="primary" onClick={goToLinkedIn} sx={{backgroundColor: "#61dafb", color: "black", "&:hover": {
+                                                backgroundColor: "white",
+                                            }}}>
                                         {t('seeLinkedIn')}
                                     </Button>
                                 </Box>
@@ -216,7 +220,13 @@ export default function Contact () {
                                         <Input placeholder={t('name')} required onChange={changeName} />
                                         <Input placeholder={t('email')} required onChange={changeEmail} type="email" />
                                         <Textarea minRows={4} placeholder={t('message')} required onChange={changeMessage} />
-                                        <Button type="submit">{t('submit')}</Button>
+                                        <Button type="submit" variant="solid" color="primary" sx={{
+                                            backgroundColor: "#61dafb",
+                                            color: "black",
+                                            "&:hover": {
+                                                backgroundColor: "white",
+                                            }
+                                            }}>{t('submit')}</Button>
                                     </Stack>
                                 </form>
                             </CardContent>
