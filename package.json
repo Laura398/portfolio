@@ -10,11 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.3.3",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.15.10",
     "@mui/joy": "^5.0.0-beta.28",
     "@mui/material": "^5.15.10",
+    "emailjs": "^4.0.3",
+    "emailjs-com": "^3.2.0",
     "i18next": "^23.10.0",
     "i18next-http-backend": "^2.5.0",
     "react": "^18.2.0",

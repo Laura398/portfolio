@@ -29,5 +29,12 @@
     "seeGitHub": "See my GitHub",
     "seeLinkedIn": "See my LinkedIn",
     "Personnal project": "Personnal project",
-    "School project": "School project"
+    "School project": "School project",
+    "contactForm": "Contact Form",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Submit",
+    "mailSent": "Your message has been sent",
+    "mailError": "An error occured, please try again later"
 }
