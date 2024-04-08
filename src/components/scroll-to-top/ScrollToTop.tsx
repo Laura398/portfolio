@@ -15,7 +15,7 @@ export default function ScrollToTop() {
       bottom: 32,
       right: 32,
       zIndex: 100,
-    }
+    };
     
     return (
       <Scroll trigger={trigger} margin={margin} scrollTo="top" />

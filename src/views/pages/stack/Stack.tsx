@@ -10,6 +10,7 @@ export default function Stack() {
         ...CENTER_MARGIN,
         bottom: "2%",
     }
+    const isDesktop = window.screen.width > 600;
     
     return (
         <div id="stack">
@@ -25,7 +26,7 @@ export default function Stack() {
                     )
                 })}
             </div>
-            <Scroll trigger={true} margin={margin} scrollTo="home-portfolio" />
+            {isDesktop && <Scroll trigger={true} margin={margin} scrollTo="home-portfolio" />}
         </div>
     )
 }

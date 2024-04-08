@@ -13,6 +13,8 @@ export default function Carousel() {
     
     const projects = PROJECTS;
 
+    const isDesktop = window.screen.width > 600;
+
     return (
         <div className="container">
             {projects.map((project, index) => {
@@ -26,7 +28,7 @@ export default function Carousel() {
                     </a>
                 )
             } )}
-            <Scroll trigger={true} margin={margin} scrollTo="contact" />
+            {isDesktop && <Scroll trigger={true} margin={margin} scrollTo="contact" />}
         </div>
     )
 }

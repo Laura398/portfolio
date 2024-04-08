@@ -10,11 +10,13 @@ export default function About() {
         bottom: "2%",
     }
 
+    const isDesktop = window.screen.width > 600;
+
     return (
         <div id="about">
             <MeCard />
             <CourseCard />
-            <Scroll trigger={true} margin={margin} scrollTo="stack" />
+            {isDesktop && <Scroll trigger={true} margin={margin} scrollTo="stack" />}
         </div>
     )
 }
