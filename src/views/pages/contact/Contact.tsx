@@ -87,7 +87,7 @@ export default function Contact () {
             <h1>
                 {t('contactMe')}
             </h1>
-            <Stack direction={{sm: "column", md: "row"}} sx={{ justifyContent: 'center' }}>
+            <Stack direction={{sm: "column", md: "row"}} justifyContent="center" alignItems="center">
                 <div className="contact-container">
                     <Box
                         sx={{
@@ -159,12 +159,12 @@ export default function Contact () {
                                         </Typography>
                                         <Typography fontWeight="lg" textColor="white">{t('Toulouse')}</Typography>
                                     </div>
-                                    <div>
+                                    {/* <div>
                                         <Typography level="body-xs" fontWeight="lg" textColor="#61dafb">
                                             {t('callMeAt')}
                                         </Typography>
                                         <Typography fontWeight="lg" textColor="white">{t('phone')}</Typography>
-                                    </div>
+                                    </div> */}
                                     <div>
                                         <Typography level="body-xs" fontWeight="lg" textColor="#61dafb">
                                             {t('sendMeAnEmail')}
