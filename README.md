@@ -23,10 +23,16 @@ Each project is accompanied by a brief description, highlighting its purpose, my
 
 Feel free to explore, and don't hesitate to reach out if you have any questions or collaboration opportunities!
 
+Development is still ongoing, definitive version will come soon.
+
 ## Key Features
 
 - Demonstrates expertise.
 - Highlights a diverse range of projects.
 - Clear contact information for inquiries or collaboration opportunities.
+
+## Access
+
+The website is accessible here : https://www.portfolio.lauramathieu.com/
 
 Thank you for visiting!
