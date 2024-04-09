@@ -7,15 +7,25 @@ import "./Contact.scss";
 export default function Contact () {
     const { t } = useTranslation();
     const form = useRef();
-    const [user_name, setUser_name] = useState('');
+    const [user_firstname, setUser_firstname] = useState('');
+    const [user_lastname, setUser_lastname] = useState('');
     const [user_email, setUser_email] = useState('');
+    const [object, setObject] = useState('');
     const [message, setMessage] = useState('');
     const [open, setOpen] = useState(false);
     const [color, setColor] = useState<SnackbarProps['color']>('neutral');
     const [snackbarMessage, setSnackbarMessage] = useState('');
 
-    const changeName = (e: any) => {
-        setUser_name(e.target.value);
+    const changeFirstname = (e: any) => {
+        setUser_firstname(e.target.value);
+    }
+
+    const changeLastname = (e: any) => {
+        setUser_lastname(e.target.value);
+    }
+
+    const changeObject = (e: any) => {
+        setObject(e.target.value);
     }
 
     const changeEmail = (e: any) => {
@@ -35,8 +45,10 @@ export default function Contact () {
             const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
             const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
             const templateParams = {
-                user_name: user_name,
+                user_firstname: user_firstname,
+                user_lastname: user_lastname,
                 user_email: user_email,
+                object: object,
                 message: message,
             };
 
@@ -53,8 +65,10 @@ export default function Contact () {
             const mailSent = t('mailSent');
             setSnackbarMessage(mailSent);
             setOpen(true);
-            setUser_name('');
+            setUser_firstname('');
+            setUser_lastname('');
             setUser_email('');
+            setObject('');
             setMessage('');
         } catch (error) {
             setColor('danger');
@@ -91,14 +105,14 @@ export default function Contact () {
                 <div className="contact-container">
                     <Box
                         sx={{
-                            width: {sm: "100%", md: "40vw"},
+                            width: "100%",
                             height: "100%",
                         }}
                     >
                         <Card
                             orientation="horizontal"
                             sx={{
-                                width: '100%',
+                                width: '90%',
                                 flexWrap: 'wrap',
                                 resize: 'horizontal',
                                 backgroundColor: "rgba(91, 128, 174, 0.471)",
@@ -197,13 +211,13 @@ export default function Contact () {
                 <div className="contact-container">
                     <Box
                         sx={{
-                            width: {sm: "100%", md: "40vw"},
+                            width: {sm: "100%", md: "100%"},
                         }}
                     >
                         <Card
                             orientation="vertical"
                             sx={{
-                                width: '100%',
+                                width: '90%',
                                 flexWrap: 'wrap',
                                 resize: 'vertical',
                                 backgroundColor: "rgba(91, 128, 174, 0.471)",
@@ -217,9 +231,13 @@ export default function Contact () {
                                     onSubmit={sendEmailFromContact}
                                 >
                                     <Stack spacing={2}>
-                                        <Input placeholder={t('name')} required onChange={changeName} />
-                                        <Input placeholder={t('email')} required onChange={changeEmail} type="email" />
-                                        <Textarea minRows={4} placeholder={t('message')} required onChange={changeMessage} />
+                                        <Stack spacing={2} direction={{ sm: "column", md: "row" }} justifyContent="space-between">
+                                            <Input fullWidth placeholder={t('firstname')} required onChange={changeFirstname} value={user_firstname} />
+                                            <Input fullWidth placeholder={t('lastname')} required onChange={changeLastname} value={user_lastname} sx={{ marginTop: "15px"}} />
+                                        </Stack>
+                                        <Input placeholder={t('email')} required onChange={changeEmail} type="email" value={user_email} />
+                                        <Input placeholder={t('object')} required onChange={changeObject} value={object} />
+                                        <Textarea minRows={4} placeholder={t('message')} required onChange={changeMessage} value={message} />
                                         <Button type="submit" variant="solid" color="primary" sx={{
                                             backgroundColor: "#61dafb",
                                             color: "black",
