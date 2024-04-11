@@ -7,6 +7,7 @@ export default function OneProject(props: {project: Project}) {
     const {project} = props;
     
     const type = t(project.type);
+    const type2 = t(project.type2);
     
     const goTo = () => {
         window.open(project.link, "_blank");
@@ -26,6 +27,7 @@ export default function OneProject(props: {project: Project}) {
             <CardContent>
                 <Typography level="title-md" textColor="#61dafb">{project.name}</Typography>
                 <Typography level="body-sm" textColor="white">{type}</Typography>
+                <Typography level="body-sm" textColor="white">{type2}</Typography>
             </CardContent>
         </Card>
     )

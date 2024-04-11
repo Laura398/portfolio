@@ -13,34 +13,38 @@ export const PROJECTS: Project[] = [
         id: 1,
         name: "Ayakashi Project",
         type: "Personnal project",
+        type2: "Template adaptation",
         image: "/assets/sites/ayakashi.png",
         icon: "/assets/sites/ayakashi-phone.png",
         link: "https://www.ayakashi-project.lauramathieu.com/"
     },
     {
         id: 2,
-        name: "JDR-generator",
-        type: "School project",
+        name: "Mundi Bellum",
+        type: "Personnal project",
+        type2: "Complex application",
         image: "/assets/sites/jdrg.png",
         icon: "/assets/sites/jdrg-phone.png",
-        link: ""
+        link: "https://www.mundi-bellum.lauramathieu.com/"
     },
-    {
-        id: 3,
-        name: "Reservia",
-        type: "School project",
-        image: "/assets/sites/reservia.png",
-        icon: "/assets/sites/reservia-phone.png",
-        link: "https://laura398.github.io/LauraMathieu_2_08032021/"
-    },
-    {
-        id: 4,
-        name: "ohmyfood!",
-        type: "School project",
-        image: "/assets/sites/ohmyfood.png",
-        icon: "/assets/sites/ohmyfood-phone.png",
-        link: "https://laura398.github.io/LauraMathieu_3_05032021/"
-    }
+    // {
+    //     id: 3,
+    //     name: "Reservia",
+    //     type: "School project",
+    //     type2: "Template adaptation",
+    //     image: "/assets/sites/reservia.png",
+    //     icon: "/assets/sites/reservia-phone.png",
+    //     link: "https://laura398.github.io/LauraMathieu_2_08032021/"
+    // },
+    // {
+    //     id: 4,
+    //     name: "ohmyfood!",
+    //     type: "School project",
+    //     type2: "Template adaptation",
+    //     image: "/assets/sites/ohmyfood.png",
+    //     icon: "/assets/sites/ohmyfood-phone.png",
+    //     link: "https://laura398.github.io/LauraMathieu_3_05032021/"
+    // }
 ];
 
 export const STACK = [
