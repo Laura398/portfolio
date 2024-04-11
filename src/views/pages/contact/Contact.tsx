@@ -122,7 +122,7 @@ export default function Contact () {
                                 <img
                                     src="/assets/avatar2.jpeg"
                                     loading="lazy"
-                                    alt=""
+                                    alt="avatar montrant un pingoun, d'un style de dessin réaliste mais mignon, dans une salle informatique"
                                 />
                             </AspectRatio>
                             <CardContent>

@@ -20,7 +20,7 @@ export default function OneProject(props: {project: Project}) {
                 <img
                     src={project.image}
                     loading="lazy"
-                    alt=""
+                    alt={project.name}
                 />
                 </AspectRatio>
             </CardOverflow>

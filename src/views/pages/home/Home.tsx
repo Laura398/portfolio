@@ -16,7 +16,7 @@ export default function Home() {
         <div className="bubbles">
             <div className="home">
                 <div className="avatar">
-                    <img src="/assets/avatar.jpeg" alt="React logo" />
+                    <img src="/assets/avatar.jpeg" alt="Logo" />
                 </div>
                 <a className="name">
                     <h1>{htmlString}</h1>
