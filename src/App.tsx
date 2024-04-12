@@ -6,6 +6,7 @@ import About from './views/pages/about/About';
 import Stack from './views/pages/stack/Stack';
 import HomePortfolio from './views/pages/home-portfolio/HomePortfolio';
 import Contact from './views/pages/contact/Contact';
+import Footer from './views/common/footer/Footer';
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
       <Stack />
       <HomePortfolio />
       <Contact />
+      <Footer />
     </div>
   )
 }
