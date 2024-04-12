@@ -31,14 +31,14 @@ export default function Header() {
             {!isPhone &&
             <div className="header__logo">
                 <a href="#home">
-                    <img src="logo.png" alt="Logo" className="logo" onClick={() => {window.scrollTo({ top: 0, behavior: "smooth" })}} />
+                    <img src="/assets/logo.png" alt="Logo" className="logo" onClick={() => {window.scrollTo({ top: 0, behavior: "smooth" })}} />
                 </a>
             </div>}
             
             {isPhone ?
                 <div className="header__menu phone">
                     <a href="#home">
-                        <img src="logo.png" alt="Logo" className="logo" onClick={() => {window.scrollTo({ top: 0, behavior: "smooth" })}} />
+                        <img src="/assets/logo.png" alt="Logo" className="logo" onClick={() => {window.scrollTo({ top: 0, behavior: "smooth" })}} />
                     </a>
                     <a href="#about">
                         <AccountBoxIcon id="about-id" className="header-icons" fontSize='large' sx={{ color: "white" }} />
