@@ -120,7 +120,7 @@ export default function Contact () {
                         >
                             <AspectRatio flex ratio="1" maxHeight={182} sx={{ minWidth: 182 }}>
                                 <img
-                                    src="/assets/avatar2.jpeg"
+                                    src="/assets/photo.png"
                                     loading="lazy"
                                     alt="avatar montrant un pingoun, d'un style de dessin réaliste mais mignon, dans une salle informatique"
                                 />

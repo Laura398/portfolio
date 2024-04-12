@@ -7,7 +7,7 @@ export default function MeCard() {
     return (
         <Card className="about-card">
             <CardContent sx={{ alignItems: 'center', textAlign: 'center', padding: "10px" }}>
-                <Avatar src="/assets/avatar2.jpeg" sx={{ '--Avatar-size': '8rem', border: "1px solid white" }} />
+                <Avatar src="/assets/photo.png" sx={{ '--Avatar-size': '8rem', border: "1px solid white" }} />
                 <Chip
                 size="md"
                 variant="soft"
