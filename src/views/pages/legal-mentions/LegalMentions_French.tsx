@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/joy";
 
-export default function LegalMentions() {
+export default function LegalMentions_French() {
     return (
         <Box width={{sm: "95%", md: "70%"}} margin="auto">
             <Typography textColor="white">

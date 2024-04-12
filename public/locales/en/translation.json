@@ -41,5 +41,6 @@
     "submit": "Submit",
     "mailSent": "Your message has been sent",
     "mailError": "An error occured, please try again later",
-    "allRightsReserved": "All rights reserved"
+    "allRightsReserved": "All rights reserved",
+    "legalMentions": "Legal Mentions"
 }
