@@ -20,7 +20,7 @@ export default function MeCard() {
                     backgroundColor: "#61dafb",
                 }}
                 >
-                    PRO
+                    INFO
                 </Chip>
                 <Typography level="h2" textColor='#61dafb'>{t("aboutMe")}</Typography>
                 <Typography level="body-lg" sx={{ maxWidth: '95%' }} textColor='white'>
