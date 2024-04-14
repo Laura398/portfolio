@@ -21,7 +21,7 @@ export default function Footer() {
                     <ModalDialog layout="fullscreen" sx={{backgroundColor: "black", color: "white", overflow: "auto"}}>
                         <ModalClose color="primary" sx={{color: "white", "&:hover": {color: "black"}}} />
                         <Stack direction="column" justifyContent="center" alignItems="center" gap={4}>
-                            <DialogTitle>{t('legalMentions')}</DialogTitle>
+                            <DialogTitle level='h1'>{t('legalMentions')}</DialogTitle>
                             <DialogContent>
                                 {languageCode === "fr" && <LegalMentions_French />}
                                 {languageCode === "en" && <LegalMentions_English />}
