@@ -1,7 +1,6 @@
 import { Dropdown, Menu, MenuButton, MenuItem } from "@mui/joy";
-import { useTranslation } from "react-i18next";
-import LanguageIcon from '@mui/icons-material/Language';
 import { useMediaQuery } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 const countries = [
     {
@@ -26,11 +25,6 @@ export default function LanguageSelector () {
 
     return (
         <Dropdown>
-            {/* <MenuButton variant="soft" sx={{margin: 0, padding: "0 10px", '&:hover': {
-                        backgroundColor: "#61dafb", color: "white"
-                    }}}>
-                <LanguageIcon />
-            </MenuButton> */}
             <MenuButton variant="plain" sx={{color: "white"}}>
                 {isDesktop && (i18n.language === "en" ? "English" : "Français")}
                 {isDesktop ? 
