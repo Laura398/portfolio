@@ -3,45 +3,51 @@ import { useMediaQuery } from "@mui/material";
 import { useTranslation } from "react-i18next";
 
 const countries = [
-    {
-        code: "en",
-        name: "English",
-    },
-    {
-        code: "fr",
-        name: "Français",
-    },
+  {
+    code: "en",
+    name: "English",
+  },
+  {
+    code: "fr",
+    name: "Français",
+  },
 ];
 
-export default function LanguageSelector () {
-    const { i18n } = useTranslation();
+export default function LanguageSelector() {
+  const { i18n } = useTranslation();
 
-    const isDesktop = useMediaQuery("(min-width:600px)");
+  const isDesktop = useMediaQuery("(min-width:600px)");
 
-    const flag =
+  const flag =
     i18n.language === "en"
       ? "/assets/flags/uk.png"
       : "/assets/flags/france.png";
 
-    return (
-        <Dropdown>
-            <MenuButton variant="plain" sx={{color: "white"}}>
-                {isDesktop && (i18n.language === "en" ? "English" : "Français")}
-                {isDesktop ? 
-                    <img src={flag} width="25" style={{ marginLeft: "10px" }} /> :
-                    <img src={flag} width="25" />
-                }
-            </MenuButton>
-            <Menu>
-                {countries.map((lng) => {
-                    return (
-                        <MenuItem key={lng.code} onClick={() => {
-                            i18n.changeLanguage(lng.code);
-                            localStorage.setItem("lang", lng.code);
-                        }}>{lng.name}</MenuItem>
-                    );
-                })}
-            </Menu>
-        </Dropdown>
-    );
-};
+  return (
+    <Dropdown>
+      <MenuButton variant="plain" sx={{ color: "white" }}>
+        {isDesktop && (i18n.language === "en" ? "English" : "Français")}
+        {isDesktop ? (
+          <img src={flag} width="25" style={{ marginLeft: "10px" }} />
+        ) : (
+          <img src={flag} width="25" />
+        )}
+      </MenuButton>
+      <Menu>
+        {countries.map((lng) => {
+          return (
+            <MenuItem
+              key={lng.code}
+              onClick={() => {
+                i18n.changeLanguage(lng.code);
+                localStorage.setItem("lang", lng.code);
+              }}
+            >
+              {lng.name}
+            </MenuItem>
+          );
+        })}
+      </Menu>
+    </Dropdown>
+  );
+}

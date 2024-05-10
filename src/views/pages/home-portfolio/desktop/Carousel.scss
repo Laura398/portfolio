@@ -1,94 +1,87 @@
 .container {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    height: 60vh;
-    gap: 0 10px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  height: 60vh;
+  gap: 0 10px;
 
-    > a {
-        flex: 0 0 190px;
-        border-radius: 0.5rem;
-        transition: 0.5s ease-in-out;
-        cursor: pointer;
-        box-shadow: 1px 5px 15px var(--tertiary);
-        border: white 2px solid;
-        position: relative;
-        overflow: hidden;
+  > a {
+    flex: 0 0 190px;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 1px 5px 15px var(--tertiary);
+    border: white 2px solid;
+    position: relative;
+    overflow: hidden;
 
-        &:nth-of-type(1) {
-        background: url("/assets/sites/ayakashi-phone.png")
-            no-repeat 50% / contain;
-        }
-        &:nth-of-type(2) {
-        background: url("/assets/sites/jdrg-phone.png")
-            no-repeat 50% / cover;
-        }
-        &:nth-of-type(3) {
-        background: url("/assets/sites/reservia-phone.png")
-            no-repeat 50% / cover;
-        }
-        &:nth-of-type(4) {
-        background: url("/assets/sites/ohmyfood-phone.png")
-            no-repeat 50% / cover;
-        }
-        .content {
-            position: absolute;
-            bottom: 0;
-            width: 100vw;
-            font-size: 1.5rem;
-            color: #fff;
-            display: flex;
-            align-items: center;
-            padding: 15px 0;
-            opacity: 0;
-            flex-direction: column;
-            height: 100%;
-            justify-content: flex-end;
-            background: rgb(2, 2, 46);
-            background: linear-gradient(
-                0deg,
-                rgba(34, 50, 52, 0.676) 0%,
-                rgba(255, 255, 255, 0) 100%
-            );
-            transform: translatey(100%) translateX(-25%);
-            transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
-            visibility: hidden;
-
-            span {
-                display: block;
-                margin: 5px auto;
-                font-size: 1.2rem;
-            }
-        }
-
-        &:hover {
-            &:nth-of-type(1) {
-            background: url("/assets/sites/ayakashi.png")
-                no-repeat 50% / contain;
-            }
-            &:nth-of-type(2) {
-            background: url("/assets/sites/jdrg.png")
-                no-repeat 50% / contain;
-            }
-            &:nth-of-type(3) {
-            background: url("/assets/sites/reservia.png")
-                no-repeat 50% / contain;
-            }
-            &:nth-of-type(4) {
-            background: url("/assets/sites/ohmyfood.png")
-                no-repeat 50% / contain;
-            }
-            
-            background-color: black;
-            flex: 0 0 50vw;
-            box-shadow: 1px 3px 15px var(--main);
-            transform: translatey(-30px);
-        }
-
-        &:hover .content {
-            opacity: 1;
-            transform: translatey(0%) translateX(-25%);
-            visibility: visible;
-        }
+    &:nth-of-type(1) {
+      background: url("/assets/sites/ayakashi-phone.png") no-repeat 50% /
+        contain;
     }
+    &:nth-of-type(2) {
+      background: url("/assets/sites/jdrg-phone.png") no-repeat 50% / cover;
+    }
+    &:nth-of-type(3) {
+      background: url("/assets/sites/reservia-phone.png") no-repeat 50% / cover;
+    }
+    &:nth-of-type(4) {
+      background: url("/assets/sites/ohmyfood-phone.png") no-repeat 50% / cover;
+    }
+    .content {
+      position: absolute;
+      bottom: 0;
+      width: 100vw;
+      font-size: 1.5rem;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 15px 0;
+      opacity: 0;
+      flex-direction: column;
+      height: 100%;
+      justify-content: flex-end;
+      background: rgb(2, 2, 46);
+      background: linear-gradient(
+        0deg,
+        rgba(28, 41, 43, 0.676) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      transform: translatey(100%) translateX(-25%);
+      transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+      visibility: hidden;
+
+      span {
+        display: block;
+        margin: 5px auto;
+        font-size: 1.2rem;
+      }
+    }
+
+    &:hover {
+      &:nth-of-type(1) {
+        background: url("/assets/sites/ayakashi.png") no-repeat 50% / contain;
+      }
+      &:nth-of-type(2) {
+        background: url("/assets/sites/jdrg.png") no-repeat 50% / contain;
+      }
+      &:nth-of-type(3) {
+        background: url("/assets/sites/reservia.png") no-repeat 50% / contain;
+      }
+      &:nth-of-type(4) {
+        background: url("/assets/sites/ohmyfood.png") no-repeat 50% / contain;
+      }
+
+      background-color: black;
+      flex: 0 0 50vw;
+      box-shadow: 1px 3px 15px var(--main);
+      transform: translatey(-30px);
+    }
+
+    &:hover .content {
+      opacity: 1;
+      transform: translatey(0%) translateX(-25%);
+      visibility: visible;
+    }
+  }
 }

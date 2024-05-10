@@ -1,71 +1,64 @@
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: var(--header-height);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2em;
-    z-index: 100;
-    background-color: var(--tertiary);
-    backdrop-filter: blur(10px);
-    border-bottom:  white 2px solid;
-    box-shadow: 0 1px 5px white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+  z-index: 100;
+  background-color: var(--tertiary);
+  backdrop-filter: blur(10px);
+  border-bottom: white 2px solid;
+  box-shadow: 0 1px 5px white;
 
-    .logo {
-        width: 75px;
-        margin-top: 5px;
-        // border-radius: 50%;
+  .logo {
+    width: 75px;
+    margin-top: 5px;
+  }
+
+  .header__menu {
+    .selected {
+      color: var(--main);
     }
 
-    .header__menu {
+    &.phone {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: var(--header-height);
+      background-color: var(--tertiary);
+      z-index: 100;
+    }
 
-        .selected {
-            color: var(--main);
-        }
+    a {
+      color: white;
+      margin: 0 1em;
 
-        &.phone {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: var(--header-height);
-            background-color: var(--tertiary);
-            z-index: 100;
+      &:hover {
+        color: var(--main);
+      }
 
-            // .logo {
-            //     width: 75px;
-            //     // border-radius: 50%;
-            // }
-        }
+      @media screen and (max-width: 768px) {
+        margin: 0 0.6em;
+      }
+    }
 
-        a {
-            color: white;
-            margin: 0 1em;
+    .linkedin-icon {
+      position: absolute;
+      top: 15px;
+      right: 20px;
 
-            &:hover {
-                color: var(--main);
-            }
-
-            @media screen and (max-width: 768px) {
-                margin: 0 0.6em;
-            }
-        }
-
-        .linkedin-icon {
-            position: absolute;
-            top: 15px;
-            right: 20px;
-
-            &:hover {
-                color: var(--main);
-            }
-        }
-    } 
+      &:hover {
+        color: var(--main);
+      }
+    }
+  }
 }
