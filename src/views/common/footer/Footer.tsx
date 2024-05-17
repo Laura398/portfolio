@@ -16,7 +16,7 @@ export default function Footer() {
   const { t } = useTranslation();
   const [open, setOpen] = React.useState(false);
 
-  const languageCode = localStorage.getItem("lang");
+  const languageCode = localStorage.getItem("laura-lang");
 
   return (
     <footer className="footer">

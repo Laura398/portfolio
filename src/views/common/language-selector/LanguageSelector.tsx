@@ -40,7 +40,7 @@ export default function LanguageSelector() {
               key={lng.code}
               onClick={() => {
                 i18n.changeLanguage(lng.code);
-                localStorage.setItem("lang", lng.code);
+                localStorage.setItem("laura-lang", lng.code);
               }}
             >
               {lng.name}

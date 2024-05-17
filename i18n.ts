@@ -7,7 +7,7 @@ async function initI18n() {
     .use(Backend)
     .use(initReactI18next)
     .init({
-      lng: localStorage.getItem("lang") || "fr",
+      lng: localStorage.getItem("laura-lang") || "fr",
       fallbackLng: "fr",
       debug: false,
       interpolation: {

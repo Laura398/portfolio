@@ -101,7 +101,7 @@ export default function Contact() {
   };
 
   const goToLinkedIn = () => {
-    const languageCode = localStorage.getItem("lang");
+    const languageCode = localStorage.getItem("laura-lang");
     if (languageCode === "fr") {
       window.open("https://www.linkedin.com/in/laura-mathieu-lm", "_blank");
     } else {
