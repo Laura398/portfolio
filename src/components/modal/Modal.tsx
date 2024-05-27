@@ -17,23 +17,6 @@ export default function ResponsiveModal(props: {
   const { t } = useTranslation();
   const { setOpen } = props;
 
-  const downloadFile = () => {
-    console.log("downloadFile");
-    
-    setOpen(false);
-    const appLink = props.app;
-    if (!appLink) return;
-    const blob : Blob = new Blob([appLink], { type: 'application/octet-stream' });
-    const aElement = document.createElement('a');
-    aElement.setAttribute('download', "app.apk");
-    const href = URL.createObjectURL(blob);
-    aElement.href = href;
-    // aElement.setAttribute('href', href);
-    aElement.setAttribute('target', '_blank');
-    aElement.click();
-    URL.revokeObjectURL(href);
-  };
-
   return (
     <React.Fragment>
       <Modal open={props.open} onClose={() => setOpen(false)}>
@@ -76,7 +59,10 @@ export default function ResponsiveModal(props: {
             >
               {t("goToWebsite")}
             </Button>
-            <Button variant="outlined" color="neutral" onClick={downloadFile}>
+            <Button variant="outlined" color="neutral" onClick={() => {
+              window.open(props.app);
+              setOpen(false);
+            }}>
               {t("downloadApp")}
             </Button>
           </Box>
