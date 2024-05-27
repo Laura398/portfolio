@@ -6,4 +6,6 @@ export type Project = {
   image: string;
   icon: string;
   link: string;
+  mobile: boolean;
+  app?: string;
 };

@@ -19,6 +19,7 @@ export default function Projects() {
     const id = target.classList[1].split("-")[2];
     setAlignment(parseInt(id));
     setProject(
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       projects.find((character) => character.id === parseInt(id)) as any
     );
     [...document.getElementsByClassName("projects-icons")].forEach(

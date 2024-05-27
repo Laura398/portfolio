@@ -19,6 +19,7 @@ type Margin = {
   top?: number | string;
   left?: number | string;
   zIndex: number;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   transform?: boolean | any;
 };
 type Props = {

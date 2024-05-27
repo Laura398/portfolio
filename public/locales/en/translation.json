@@ -2,7 +2,7 @@
   "home": "Home",
   "about": "About",
   "stack": "Stack",
-  "portfolio": "Portfolio",
+  "portfolio": "Projects",
   "contact": "Contact",
   "title": "Full Stack Web Developer",
   "aboutMe": "About Me",
@@ -30,8 +30,9 @@
   "seeLinkedIn": "See my LinkedIn",
   "Personnal project": "Personnal project",
   "School project": "School project",
-  "Complex application": "Web application",
-  "Template adaptation": "Website",
+  "Web application": "Web application",
+  "Website": "Website",
+  "Mobile Application": "Mobile Application (Android)",
   "contactForm": "Contact Form",
   "firstname": "First Name",
   "lastname": "Last Name",
@@ -42,5 +43,9 @@
   "mailSent": "Your message has been sent",
   "mailError": "An error occured, please try again later",
   "allRightsReserved": "All rights reserved",
-  "legalMentions": "Legal Mentions"
+  "legalMentions": "Legal Mentions",
+  "whatHappens": "What do you want to do?",
+  "whatHappensDescription": "Choos if you want to be redirected to the web version or if you want to download the mobile (android) version.",
+  "goToWebsite": "Go to the website",
+  "downloadApp": "Download the app"
 }
