@@ -25,7 +25,7 @@ export const PROJECTS: Project[] = [
     type2: "Web application",
     image: "/assets/sites/jdrg.png",
     icon: "/assets/sites/jdrg-phone.png",
-    link: "https://www.mundi-bellum.lauramathieu.com/",
+    // link: "https://www.mundi-bellum.lauramathieu.com/",
     mobile: false,
   },
   {
